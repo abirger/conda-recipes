@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile"> 
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>
+    
+      Installing the IOOS Anaconda Environment &middot; IOOS Conda Recipes
+    
+  </title>
+
+  
+  <link rel="stylesheet" href="http://abirger.github.io/conda-recipes/css/poole.css">
+  <link rel="stylesheet" href="http://abirger.github.io/conda-recipes/css/syntax.css">
+  <link rel="stylesheet" href="http://abirger.github.io/conda-recipes/css/lanyon.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400">
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://abirger.github.io/conda-recipes/assets/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="http://abirger.github.io/conda-recipes/assets/favicon.ico">
+
+  
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://abirger.github.io/conda-recipes/atom.xml">
+</head>
+
+
+  <body>
+
+    
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p align="center">&middot; <a href="http://ioos.github.io/" target="_blank">IOOS GitHub Pages</a> &middot; <br>
+	a collection of IOOS documentation and software</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item " href="http://abirger.github.io/conda-recipes/">Home</a>
+
+
+  <div class="sidebar-item">
+    <p>Documents</p>
+  </div>
+
+<p style="text-align:right"> 
+    
+    
+      
+        <a class="sidebar-nav-item-list " href="http://abirger.github.io/conda-recipes/about/">About IOOS Conda Packages &amp; Python Environment</a>
+      
+    
+      
+        <a class="sidebar-nav-item-list  active " href="http://abirger.github.io/conda-recipes/Setting-up-the-IOOS-Python-environment/">Installing the IOOS Anaconda Environment</a>
+      
+    
+      
+        <a class="sidebar-nav-item-list " href="http://abirger.github.io/conda-recipes/Updating-an-IOOS-anaconda-package/">Updating an IOOS Anaconda Package</a>
+      
+    
+      
+        <a class="sidebar-nav-item-list " href="http://abirger.github.io/conda-recipes/Testing-the-IOOS-environment/">Testing the IOOS Environment</a>
+      
+    
+      
+        <a class="sidebar-nav-item-list " href="http://abirger.github.io/conda-recipes/Customizing-the-notebook-settings/">Customizing the Notebook Settings</a>
+      
+    
+      
+        <a class="sidebar-nav-item-list " href="http://abirger.github.io/conda-recipes/Using-Obvious-CI-to-build-IOOS-binaries/">Using Obvious CI to Build IOOS Binaries</a>
+      
+    
+</p>
+<p style="text-align:right">
+      
+</p>
+
+    <a class="sidebar-nav-item" href="https://github.com/abirger/conda-recipes">GitHub repository <br> (currently on 'master')</a>
+    <a class="sidebar-nav-item" href="https://github.com/abirger/conda-recipes/archive/master.zip">Download repository</a>
+
+
+	</nav>
+
+  <div class="sidebar-item">
+    <span>&copy; 2015 U.S. IOOS. Rights reserved</span>
+  </div>
+</div>
+
+
+    
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h2 class="masthead-title">
+		  <a href="http://abirger.github.io/conda-recipes/" title="Home"> IOOS Conda Recipes &middot; 
+		  <small>Instructions on the IOOS Python Virtual Environment</small>
+		  <img src="http://abirger.github.io/conda-recipes/images/ioos_blue2.png" alt="Smiley face" align="right" /></a>
+		  </h2>
+        </div>
+      </div>
+
+      <div class="container content">
+
+
+<div class="post">
+  <h1 class="post-title">Installing the IOOS Anaconda Environment</h1>
+    <div id="toc" class="well col-md-4 col-sm-6">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#installing-miniconda:ecf2a46b65b678822b2e025995d0bde3">Installing Miniconda</a>
+<ul>
+<li><a href="#windows:ecf2a46b65b678822b2e025995d0bde3">Windows</a></li>
+<li><a href="#linux-and-osx-command-line:ecf2a46b65b678822b2e025995d0bde3">Linux and OSX command line</a></li>
+</ul></li>
+<li><a href="#creating-the-ioos-environment:ecf2a46b65b678822b2e025995d0bde3">Creating the IOOS environment</a>
+<ul>
+<li><a href="#windows-1:ecf2a46b65b678822b2e025995d0bde3">Windows</a></li>
+<li><a href="#linux-and-osx-command-line-1:ecf2a46b65b678822b2e025995d0bde3">Linux and OSX command line</a></li>
+<li><a href="#all-platforms:ecf2a46b65b678822b2e025995d0bde3">All platforms</a></li>
+</ul></li>
+<li><a href="#exiting-the-ioos-environment:ecf2a46b65b678822b2e025995d0bde3">Exiting the IOOS environment</a></li>
+<li><a href="#note-about-the-channels:ecf2a46b65b678822b2e025995d0bde3">Note about the channels</a></li>
+</ul>
+</nav>
+    </div>
+  
+
+<p>One approach for running Anaconda is to go to <a href="https://store.continuum.io/cshop/anaconda/">https://store.continuum.io/cshop/anaconda/</a> and download the Anaconda installer, which installs a large number of packages into the root environment.
+We prefer to download just a minimal Anaconda (Miniconda) and create our own environment using just the packages we need.</p>
+
+<p>In addition, there is currently a <a href="https://groups.google.com/a/continuum.io/forum/#!topic/anaconda/w8jewHj2T1A">known bug with the full Anaconda installer on Windows</a> that prevents the full Anaconda distribution from working properly with custom environments, while the Miniconda installation is still working.
+If for some reason the full Anaconda is preferred (e.g. the previously installed Anaconda just stopped working properly after update), there is a temporary <a href="https://github.com/ioos/conda-recipes/issues/581#issuecomment-155606987">workaround</a> for that bug.</p>
+
+<h1 id="installing-miniconda:ecf2a46b65b678822b2e025995d0bde3">Installing Miniconda</h1>
+
+<h2 id="windows:ecf2a46b65b678822b2e025995d0bde3">Windows</h2>
+
+<p>Navigate to <a href="http://conda.pydata.org/miniconda.html">http://conda.pydata.org/miniconda.html</a> and download the proper installer for you Windows platform (32 or 64 bits).</p>
+
+<p>We recommend to download the Python 2 version of Miniconda as not all packages are Python 3-compliant yet, so the IOOS environment you create below is based on Python 2.   You can still create new Python 3 environments using the Python 2 verson of Miniconda, so you are not limiting yourself.</p>
+
+<p>When installing you will be asked if you wish to make the Anaconda Python your default Python for Windows. If you do not have any other installation that is a good option.  If you want to keep multiple versions of python on your machine (e.g. ESRI-supplied python, or both 32 and 64 bit versions of Anaconda), then don&rsquo;t select the option to modify your path or modify your windows registry settings.</p>
+
+<h2 id="linux-and-osx-command-line:ecf2a46b65b678822b2e025995d0bde3">Linux and OSX command line</h2>
+
+<pre><code class="language-bash">url=http://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh
+curl $url -o miniconda.sh
+bash miniconda.sh -b
+export PATH=$HOME/miniconda/bin:$PATH
+conda update --yes --all
+</code></pre>
+
+<h1 id="creating-the-ioos-environment:ecf2a46b65b678822b2e025995d0bde3">Creating the IOOS environment</h1>
+
+<h2 id="windows-1:ecf2a46b65b678822b2e025995d0bde3">Windows</h2>
+
+<p>Download the <a href="https://raw.githubusercontent.com/ioos/conda-recipes/master/environment.yml">environment.yml</a> by right clicking with the mouse and choosing
+<code>save as...</code></p>
+
+<h2 id="linux-and-osx-command-line-1:ecf2a46b65b678822b2e025995d0bde3">Linux and OSX command line</h2>
+
+<pre><code class="language-bash">url=https://raw.githubusercontent.com/ioos/conda-recipes/master/environment.yml
+curl $url -o environment.yml
+</code></pre>
+
+<h2 id="all-platforms:ecf2a46b65b678822b2e025995d0bde3">All platforms</h2>
+
+<p>The <code>environment.yml</code> file is just a text file with the environment name, what channel we want to add,
+and the list of the software that will be installed.
+To create the file, open a terminal Window where you saved the file and type the following commands to create the environment and to activate it, depending on your OS:</p>
+
+<pre><code class="language-bash">conda env create environment.yml
+source activate IOOS  # OSX and Linux
+activate IOOS  # Windows
+</code></pre>
+
+<h1 id="exiting-the-ioos-environment:ecf2a46b65b678822b2e025995d0bde3">Exiting the IOOS environment</h1>
+
+<p>If you want to leave the IOOS environment and return to the root Anaconda environment, you can type</p>
+
+<pre><code class="language-bash">source deactivate  # OSX and Linux
+deactivate  # Windows
+</code></pre>
+
+<p>Remember to always add miniconda to the path and to activate the IOOS environment when starting a new session.
+On Linux and OSX you can add the line below to your <code>.bashrc</code> and make the IOOS environment default,
+but that is not recommended! You might have other applications that relies on the default system Python.</p>
+
+<pre><code class="language-bash">export PATH=$HOME/miniconda/bin:$PATH &amp;&amp; source activate IOOS
+</code></pre>
+
+<p>On Windows, if you chose to install the Anaconda distribution as your default Python,
+all you need to do is to activate the environment <code>activate IOOS</code>.
+If you chose to <strong>not</strong> add the Anaconda distribution as your default Python you will need to start it using the Anaconda terminal icon.</p>
+
+<h1 id="note-about-the-channels:ecf2a46b65b678822b2e025995d0bde3">Note about the channels</h1>
+
+<p>When typing <code>conda info</code> you should see the default channel, from Continuum, and the <code>ioos</code> channel that was automagically added via the <code>environment.yml</code> file.
+If you don&rsquo;t see the default continuum channel, add it by typing:</p>
+
+<pre><code class="language-bash">conda config --add channels defaults --force
+</code></pre>
+
+<p>You can have mix-and-match more channels. However, bare in mind that packages can be inconsistent with each other and you might end up with an unstable environment.
+We recommend to keep the default channel + 1 other only.</p>
+
+<p>We also recommend to display where the package is coming from using by setting the config option, as follows:</p>
+
+<pre><code class="language-bash">conda config --set show_channel_urls True
+</code></pre>
+
+<p>Hopefully that will be the <a href="https://github.com/conda/conda/pull/1771">default behavior</a> in conda soon.</p>
+
+</div>
+
+
+
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+  </body>
+</html>
+

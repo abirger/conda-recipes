@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile"> 
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>
+    
+      About IOOS Conda Packages &amp; Python Environment &middot; IOOS Conda Recipes
+    
+  </title>
+
+  
+  <link rel="stylesheet" href="http://abirger.github.io/conda-recipes/css/poole.css">
+  <link rel="stylesheet" href="http://abirger.github.io/conda-recipes/css/syntax.css">
+  <link rel="stylesheet" href="http://abirger.github.io/conda-recipes/css/lanyon.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400">
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://abirger.github.io/conda-recipes/assets/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="http://abirger.github.io/conda-recipes/assets/favicon.ico">
+
+  
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://abirger.github.io/conda-recipes/atom.xml">
+</head>
+
+
+  <body>
+
+    
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p align="center">&middot; <a href="http://ioos.github.io/" target="_blank">IOOS GitHub Pages</a> &middot; <br>
+	a collection of IOOS documentation and software</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item " href="http://abirger.github.io/conda-recipes/">Home</a>
+
+
+  <div class="sidebar-item">
+    <p>Documents</p>
+  </div>
+
+<p style="text-align:right"> 
+    
+    
+      
+        <a class="sidebar-nav-item-list  active " href="http://abirger.github.io/conda-recipes/about/">About IOOS Conda Packages &amp; Python Environment</a>
+      
+    
+      
+        <a class="sidebar-nav-item-list " href="http://abirger.github.io/conda-recipes/Setting-up-the-IOOS-Python-environment/">Installing the IOOS Anaconda Environment</a>
+      
+    
+      
+        <a class="sidebar-nav-item-list " href="http://abirger.github.io/conda-recipes/Updating-an-IOOS-anaconda-package/">Updating an IOOS Anaconda Package</a>
+      
+    
+      
+        <a class="sidebar-nav-item-list " href="http://abirger.github.io/conda-recipes/Testing-the-IOOS-environment/">Testing the IOOS Environment</a>
+      
+    
+      
+        <a class="sidebar-nav-item-list " href="http://abirger.github.io/conda-recipes/Customizing-the-notebook-settings/">Customizing the Notebook Settings</a>
+      
+    
+      
+        <a class="sidebar-nav-item-list " href="http://abirger.github.io/conda-recipes/Using-Obvious-CI-to-build-IOOS-binaries/">Using Obvious CI to Build IOOS Binaries</a>
+      
+    
+</p>
+<p style="text-align:right">
+      
+</p>
+
+    <a class="sidebar-nav-item" href="https://github.com/abirger/conda-recipes">GitHub repository <br> (currently on 'master')</a>
+    <a class="sidebar-nav-item" href="https://github.com/abirger/conda-recipes/archive/master.zip">Download repository</a>
+
+
+	</nav>
+
+  <div class="sidebar-item">
+    <span>&copy; 2015 U.S. IOOS. Rights reserved</span>
+  </div>
+</div>
+
+
+    
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h2 class="masthead-title">
+		  <a href="http://abirger.github.io/conda-recipes/" title="Home"> IOOS Conda Recipes &middot; 
+		  <small>Instructions on the IOOS Python Virtual Environment</small>
+		  <img src="http://abirger.github.io/conda-recipes/images/ioos_blue2.png" alt="Smiley face" align="right" /></a>
+		  </h2>
+        </div>
+      </div>
+
+      <div class="container content">
+
+
+<div class="post">
+  <h1 class="post-title">About IOOS Conda Packages &amp; Python Environment</h1>
+    <div id="toc" class="well col-md-4 col-sm-6">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#the-ioos-python-environment:6083a88ee3411b0d17ce02d738f69d47">The IOOS Python Environment</a>
+<ul>
+<li><a href="#why-we-use-and-recommend-anaconda:6083a88ee3411b0d17ce02d738f69d47">Why we use and recommend Anaconda</a></li>
+<li><a href="#install-configure:6083a88ee3411b0d17ce02d738f69d47">Install &amp; Configure</a></li>
+<li><a href="#test:6083a88ee3411b0d17ce02d738f69d47">Test</a></li>
+<li><a href="#customize:6083a88ee3411b0d17ce02d738f69d47">Customize</a></li>
+<li><a href="#get-help:6083a88ee3411b0d17ce02d738f69d47">Get Help</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+  
+
+<!-- For a single homepage put in FrontMatter url = "index.html"; for a summary of multiple documents on one page do not put url parameter there at all -->
+
+<!-- PUT SUMMARY CONTENT HERE BEFORE "MORE" COMMENT-->
+
+<p>This site contains the instructions on how to setup and run the IOOS Python Virtual Environment in order to use the conda packages that are useful to the IOOS community. These conda packages were created with the <a href="https://github.com/ioos/conda-recipes/">conda recipes</a>, and shared with the community at <a href="https://anaconda.org/ioos">Anaconda.org</a>.</p>
+
+<!-- ADDITIONAL CONTENT MAY BE PLACED AFTER "MORE" FOR A SINGLE PAGE -->
+
+<p><br><span> <a href="https://travis-ci.org/ioos/conda-recipes"><img src="https://travis-ci.org/ioos/conda-recipes.svg" alt="build status" />
+</a> <a href="https://ci.appveyor.com/project/comtbot/conda-recipes"><img src="https://ci.appveyor.com/api/projects/status/behpiwxfraxcruv3?svg=true" alt="Build status" />
+</a> <a href="https://circleci.com/gh/ioos/conda-recipes/tree/master"><img src="https://circleci.com/gh/ioos/conda-recipes/tree/master.svg?style=svg" alt="Circle CI" />
+</a> <a href="http://mybinder.org/repo/ioos/conda-recipes"><img src="http://mybinder.org/badge.svg" alt="Binder" />
+</a></span></p>
+
+<h1 id="the-ioos-python-environment:6083a88ee3411b0d17ce02d738f69d47">The IOOS Python Environment</h1>
+
+<p>For IOOS python users, we recommend the <a href="https://store.continuum.io/cshop/anaconda/">Anaconda Scientific Python Distribution</a> as the easiest way to get all the custom packages needed to run the IOOS system tests.  <a href="https://github.com/ioos/conda-recipes/wiki/Why-we-use-and-recommend-Anaconda">more info</a></p>
+
+<h2 id="why-we-use-and-recommend-anaconda:6083a88ee3411b0d17ce02d738f69d47">Why we use and recommend Anaconda</h2>
+
+<p>Anaconda users can just <code>conda install</code>, which installs not only binary packages for their platform, but the binary libraries they depend on.  So it&rsquo;s easier than <code>pip install</code> and, thanks to binary relocation, more powerful than python wheels.  System-level installation of libraries and admin
+privileges are not required.  Check out <a href="http://technicaldiscovery.blogspot.com/2013/12/why-i-promote-conda.html">Travis Oliphant&rsquo;s blog piece</a> for more info.</p>
+
+<h2 id="install-configure:6083a88ee3411b0d17ce02d738f69d47">Install &amp; Configure</h2>
+
+<ul>
+<li><a href="https://github.com/ioos/conda-recipes/wiki/Setting-up-the-IOOS-Python-environment">Setting up the IOOS Python environment</a></li>
+</ul>
+
+<h2 id="test:6083a88ee3411b0d17ce02d738f69d47">Test</h2>
+
+<ul>
+<li><a href="https://github.com/ioos/conda-recipes/wiki/Testing-the-IOOS-environment">Testing the IOOS environment</a></li>
+</ul>
+
+<h2 id="customize:6083a88ee3411b0d17ce02d738f69d47">Customize</h2>
+
+<ul>
+<li><a href="https://github.com/ioos/conda-recipes/wiki/Customizing-the-notebook-settings">Customizing the notebook settings</a></li>
+</ul>
+
+<h2 id="get-help:6083a88ee3411b0d17ce02d738f69d47">Get Help</h2>
+
+<p>Some bugs, like hard-coded paths, might surface when using these packages. If you encounter this or other problems, <a href="https://github.com/ioos/conda-recipes/issues">raise an issue</a>.</p>
+
+<p><strong>Acknowledgement</strong>: The recipes here are automatically built using <a href="https://travis-ci.org/ioos/conda-recipes">Travis-CI</a> with the assistance of <a href="https://github.com/pelson/Obvious-CI/https://github.com/ioos/conda-recipes/blob/master/.travis.yml#L14-L31">Obvious-CI</a>.</p>
+
+</div>
+
+
+
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+  </body>
+</html>
+

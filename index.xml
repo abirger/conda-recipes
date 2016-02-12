@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> </title>
+    <link>http://abirger.github.io/conda-recipes/</link>
+    <language>en-us</language>
+    <author></author>
+    <rights>(C) 2015</rights>
+    <updated>2015-08-04 07:56:39 &#43;0000 UTC</updated>
+
+    
+      
+        <item>
+          <title>About IOOS Conda Packages &amp; Python Environment</title>
+          <link>http://abirger.github.io/conda-recipes/about/</link>
+          <pubDate>Tue, 04 Aug 2015 07:56:39 UTC</pubDate>
+          <author></author>
+          <guid>http://abirger.github.io/conda-recipes/about/</guid>
+          <description>
+
+&lt;!-- For a single homepage put in FrontMatter url = &#34;index.html&#34;; for a summary of multiple documents on one page do not put url parameter there at all --&gt;
+
+&lt;!-- PUT SUMMARY CONTENT HERE BEFORE &#34;MORE&#34; COMMENT--&gt;
+
+&lt;p&gt;This site contains the instructions on how to setup and run the IOOS Python Virtual Environment in order to use the conda packages that are useful to the IOOS community. These conda packages were created with the &lt;a href=&#34;https://github.com/ioos/conda-recipes/&#34;&gt;conda recipes&lt;/a&gt;, and shared with the community at &lt;a href=&#34;https://anaconda.org/ioos&#34;&gt;Anaconda.org&lt;/a&gt;.&lt;/p&gt;
+
+&lt;!-- ADDITIONAL CONTENT MAY BE PLACED AFTER &#34;MORE&#34; FOR A SINGLE PAGE --&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;span&gt; &lt;a href=&#34;https://travis-ci.org/ioos/conda-recipes&#34;&gt;&lt;img src=&#34;https://travis-ci.org/ioos/conda-recipes.svg&#34; alt=&#34;build status&#34; /&gt;
+&lt;/a&gt; &lt;a href=&#34;https://ci.appveyor.com/project/comtbot/conda-recipes&#34;&gt;&lt;img src=&#34;https://ci.appveyor.com/api/projects/status/behpiwxfraxcruv3?svg=true&#34; alt=&#34;Build status&#34; /&gt;
+&lt;/a&gt; &lt;a href=&#34;https://circleci.com/gh/ioos/conda-recipes/tree/master&#34;&gt;&lt;img src=&#34;https://circleci.com/gh/ioos/conda-recipes/tree/master.svg?style=svg&#34; alt=&#34;Circle CI&#34; /&gt;
+&lt;/a&gt; &lt;a href=&#34;http://mybinder.org/repo/ioos/conda-recipes&#34;&gt;&lt;img src=&#34;http://mybinder.org/badge.svg&#34; alt=&#34;Binder&#34; /&gt;
+&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;the-ioos-python-environment:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;The IOOS Python Environment&lt;/h1&gt;
+
+&lt;p&gt;For IOOS python users, we recommend the &lt;a href=&#34;https://store.continuum.io/cshop/anaconda/&#34;&gt;Anaconda Scientific Python Distribution&lt;/a&gt; as the easiest way to get all the custom packages needed to run the IOOS system tests.  &lt;a href=&#34;https://github.com/ioos/conda-recipes/wiki/Why-we-use-and-recommend-Anaconda&#34;&gt;more info&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;why-we-use-and-recommend-anaconda:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Why we use and recommend Anaconda&lt;/h2&gt;
+
+&lt;p&gt;Anaconda users can just &lt;code&gt;conda install&lt;/code&gt;, which installs not only binary packages for their platform, but the binary libraries they depend on.  So it&amp;rsquo;s easier than &lt;code&gt;pip install&lt;/code&gt; and, thanks to binary relocation, more powerful than python wheels.  System-level installation of libraries and admin
+privileges are not required.  Check out &lt;a href=&#34;http://technicaldiscovery.blogspot.com/2013/12/why-i-promote-conda.html&#34;&gt;Travis Oliphant&amp;rsquo;s blog piece&lt;/a&gt; for more info.&lt;/p&gt;
+
+&lt;h2 id=&#34;install-configure:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Install &amp;amp; Configure&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ioos/conda-recipes/wiki/Setting-up-the-IOOS-Python-environment&#34;&gt;Setting up the IOOS Python environment&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;test:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Test&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ioos/conda-recipes/wiki/Testing-the-IOOS-environment&#34;&gt;Testing the IOOS environment&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;customize:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Customize&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ioos/conda-recipes/wiki/Customizing-the-notebook-settings&#34;&gt;Customizing the notebook settings&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;get-help:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Get Help&lt;/h2&gt;
+
+&lt;p&gt;Some bugs, like hard-coded paths, might surface when using these packages. If you encounter this or other problems, &lt;a href=&#34;https://github.com/ioos/conda-recipes/issues&#34;&gt;raise an issue&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Acknowledgement&lt;/strong&gt;: The recipes here are automatically built using &lt;a href=&#34;https://travis-ci.org/ioos/conda-recipes&#34;&gt;Travis-CI&lt;/a&gt; with the assistance of &lt;a href=&#34;https://github.com/pelson/Obvious-CI/https://github.com/ioos/conda-recipes/blob/master/.travis.yml#L14-L31&#34;&gt;Obvious-CI&lt;/a&gt;.&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Installing the IOOS Anaconda Environment</title>
+          <link>http://abirger.github.io/conda-recipes/Setting-up-the-IOOS-Python-environment/</link>
+          <pubDate>Tue, 04 Aug 2015 07:56:39 UTC</pubDate>
+          <author></author>
+          <guid>http://abirger.github.io/conda-recipes/Setting-up-the-IOOS-Python-environment/</guid>
+          <description>
+
+&lt;p&gt;One approach for running Anaconda is to go to &lt;a href=&#34;https://store.continuum.io/cshop/anaconda/&#34;&gt;https://store.continuum.io/cshop/anaconda/&lt;/a&gt; and download the Anaconda installer, which installs a large number of packages into the root environment.
+We prefer to download just a minimal Anaconda (Miniconda) and create our own environment using just the packages we need.&lt;/p&gt;
+
+&lt;p&gt;In addition, there is currently a &lt;a href=&#34;https://groups.google.com/a/continuum.io/forum/#!topic/anaconda/w8jewHj2T1A&#34;&gt;known bug with the full Anaconda installer on Windows&lt;/a&gt; that prevents the full Anaconda distribution from working properly with custom environments, while the Miniconda installation is still working.
+If for some reason the full Anaconda is preferred (e.g. the previously installed Anaconda just stopped working properly after update), there is a temporary &lt;a href=&#34;https://github.com/ioos/conda-recipes/issues/581#issuecomment-155606987&#34;&gt;workaround&lt;/a&gt; for that bug.&lt;/p&gt;
+
+&lt;h1 id=&#34;installing-miniconda:ecf2a46b65b678822b2e025995d0bde3&#34;&gt;Installing Miniconda&lt;/h1&gt;
+
+&lt;h2 id=&#34;windows:ecf2a46b65b678822b2e025995d0bde3&#34;&gt;Windows&lt;/h2&gt;
+
+&lt;p&gt;Navigate to &lt;a href=&#34;http://conda.pydata.org/miniconda.html&#34;&gt;http://conda.pydata.org/miniconda.html&lt;/a&gt; and download the proper installer for you Windows platform (32 or 64 bits).&lt;/p&gt;
+
+&lt;p&gt;We recommend to download the Python 2 version of Miniconda as not all packages are Python 3-compliant yet, so the IOOS environment you create below is based on Python 2.   You can still create new Python 3 environments using the Python 2 verson of Miniconda, so you are not limiting yourself.&lt;/p&gt;
+
+&lt;p&gt;When installing you will be asked if you wish to make the Anaconda Python your default Python for Windows. If you do not have any other installation that is a good option.  If you want to keep multiple versions of python on your machine (e.g. ESRI-supplied python, or both 32 and 64 bit versions of Anaconda), then don&amp;rsquo;t select the option to modify your path or modify your windows registry settings.&lt;/p&gt;
+
+&lt;h2 id=&#34;linux-and-osx-command-line:ecf2a46b65b678822b2e025995d0bde3&#34;&gt;Linux and OSX command line&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;url=http://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh
+curl $url -o miniconda.sh
+bash miniconda.sh -b
+export PATH=$HOME/miniconda/bin:$PATH
+conda update --yes --all
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;creating-the-ioos-environment:ecf2a46b65b678822b2e025995d0bde3&#34;&gt;Creating the IOOS environment&lt;/h1&gt;
+
+&lt;h2 id=&#34;windows-1:ecf2a46b65b678822b2e025995d0bde3&#34;&gt;Windows&lt;/h2&gt;
+
+&lt;p&gt;Download the &lt;a href=&#34;https://raw.githubusercontent.com/ioos/conda-recipes/master/environment.yml&#34;&gt;environment.yml&lt;/a&gt; by right clicking with the mouse and choosing
+&lt;code&gt;save as...&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;linux-and-osx-command-line-1:ecf2a46b65b678822b2e025995d0bde3&#34;&gt;Linux and OSX command line&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;url=https://raw.githubusercontent.com/ioos/conda-recipes/master/environment.yml
+curl $url -o environment.yml
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;all-platforms:ecf2a46b65b678822b2e025995d0bde3&#34;&gt;All platforms&lt;/h2&gt;
+
+&lt;p&gt;The &lt;code&gt;environment.yml&lt;/code&gt; file is just a text file with the environment name, what channel we want to add,
+and the list of the software that will be installed.
+To create the file, open a terminal Window where you saved the file and type the following commands to create the environment and to activate it, depending on your OS:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;conda env create environment.yml
+source activate IOOS  # OSX and Linux
+activate IOOS  # Windows
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;exiting-the-ioos-environment:ecf2a46b65b678822b2e025995d0bde3&#34;&gt;Exiting the IOOS environment&lt;/h1&gt;
+
+&lt;p&gt;If you want to leave the IOOS environment and return to the root Anaconda environment, you can type&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;source deactivate  # OSX and Linux
+deactivate  # Windows
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Remember to always add miniconda to the path and to activate the IOOS environment when starting a new session.
+On Linux and OSX you can add the line below to your &lt;code&gt;.bashrc&lt;/code&gt; and make the IOOS environment default,
+but that is not recommended! You might have other applications that relies on the default system Python.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;export PATH=$HOME/miniconda/bin:$PATH &amp;amp;&amp;amp; source activate IOOS
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;On Windows, if you chose to install the Anaconda distribution as your default Python,
+all you need to do is to activate the environment &lt;code&gt;activate IOOS&lt;/code&gt;.
+If you chose to &lt;strong&gt;not&lt;/strong&gt; add the Anaconda distribution as your default Python you will need to start it using the Anaconda terminal icon.&lt;/p&gt;
+
+&lt;h1 id=&#34;note-about-the-channels:ecf2a46b65b678822b2e025995d0bde3&#34;&gt;Note about the channels&lt;/h1&gt;
+
+&lt;p&gt;When typing &lt;code&gt;conda info&lt;/code&gt; you should see the default channel, from Continuum, and the &lt;code&gt;ioos&lt;/code&gt; channel that was automagically added via the &lt;code&gt;environment.yml&lt;/code&gt; file.
+If you don&amp;rsquo;t see the default continuum channel, add it by typing:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;conda config --add channels defaults --force
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can have mix-and-match more channels. However, bare in mind that packages can be inconsistent with each other and you might end up with an unstable environment.
+We recommend to keep the default channel + 1 other only.&lt;/p&gt;
+
+&lt;p&gt;We also recommend to display where the package is coming from using by setting the config option, as follows:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;conda config --set show_channel_urls True
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Hopefully that will be the &lt;a href=&#34;https://github.com/conda/conda/pull/1771&#34;&gt;default behavior&lt;/a&gt; in conda soon.&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Updating an IOOS Anaconda Package</title>
+          <link>http://abirger.github.io/conda-recipes/Updating-an-IOOS-anaconda-package/</link>
+          <pubDate>Tue, 04 Aug 2015 07:56:39 UTC</pubDate>
+          <author></author>
+          <guid>http://abirger.github.io/conda-recipes/Updating-an-IOOS-anaconda-package/</guid>
+          <description>&lt;p&gt;If you have a package that you would like to update, a package that already exists on the IOOS anaconda channel (&lt;a href=&#34;http://conda.anaconda.org/ioos&#34;&gt;http://conda.anaconda.org/ioos&lt;/a&gt;), you can try going to the &lt;code&gt;meta.yaml&lt;/code&gt; file for that package, clicking on &lt;code&gt;edit&lt;/code&gt; and changing the version number.&lt;/p&gt;
+
+&lt;p&gt;Example:  Let&amp;rsquo;s say a new version of &lt;a href=&#34;https://github.com/ioos/pyoos/releases&#34;&gt;pyoos&lt;/a&gt; is released, changing the version number from &lt;code&gt;0.6.2&lt;/code&gt; to &lt;code&gt;0.6.3&lt;/code&gt;.   To get this updated version on the anaconda ioos channel, you just change the version number in the pyoos &lt;code&gt;meta.yaml&lt;/code&gt; file by going &lt;a href=&#34;https://github.com/ioos/conda-recipes/blob/master/pyoos/meta.yaml#L3-L7&#34;&gt;here&lt;/a&gt; and clicking on the pen icon to edit.  When you are done making the edit, select &lt;code&gt;Create a new branch for this commit and start a pull request&lt;/code&gt;.   The pull request will automatically test to see if the new version builds on linux and windows (and hopefully soon on mac).&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Testing the IOOS Environment</title>
+          <link>http://abirger.github.io/conda-recipes/Testing-the-IOOS-environment/</link>
+          <pubDate>Tue, 04 Aug 2015 07:56:39 UTC</pubDate>
+          <author></author>
+          <guid>http://abirger.github.io/conda-recipes/Testing-the-IOOS-environment/</guid>
+          <description>&lt;p&gt;You may run your iPython notebook without testing; however, a simple procedure allows verifying that the environment and notebook were set up properly.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Grab and use any of the notebooks available &lt;a href=&#34;http://nbviewer.ipython.org/github/ioos/conda-recipes/blob/master/index.ipynb&#34;&gt;here&lt;/a&gt;. Once you located a notebook that interests you you can download it using the upper right icon.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;If you don&amp;rsquo;t have the Anaconda launcher installed, type &lt;code&gt;conda install launcher&lt;/code&gt; to install it.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Click on the launcher icon to start the launcher application, or just type &amp;lsquo;launcher&amp;rsquo; from the terminal (linux or mac) or Anaconda Command Prompt (windows).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;From the Launcher, make sure that the &lt;code&gt;ioos&lt;/code&gt; environment is selected, and then click the &lt;code&gt;launch&amp;quot;&lt;/code&gt;button to the right of the &lt;code&gt;ipython-notebook&lt;/code&gt; app.  If you don&amp;rsquo;t see the &lt;code&gt;launch&lt;/code&gt; button, you need to click on &lt;code&gt;install&lt;/code&gt; to install the app.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Once the Notebook is launched, you should see a list of directories and files, and near the top, instructions for importing a notebook.  Note that the &lt;code&gt;Ipython Notebook&lt;/code&gt; has now changed it&amp;rsquo;s name to &lt;code&gt;Jupyter&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Import the downloaded notebooks.  You can drag the downloaded notebook onto the Notebook list, and then click &amp;ldquo;upload&amp;rdquo;, or click on .&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;In the Notebook, click on &lt;code&gt;Cell=&amp;gt;All Output=&amp;gt;Clear&lt;/code&gt; to clear the existing output, and then &lt;code&gt;Cell=&amp;gt;Run all&lt;/code&gt; to see if the output is recreated.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;If you just want to test the environment click on the icon below:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://mybinder.org/repo/ioos/conda-recipes&#34;&gt;&lt;img src=&#34;http://mybinder.org/badge.svg&#34; alt=&#34;Binder&#34; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Customizing the Notebook Settings</title>
+          <link>http://abirger.github.io/conda-recipes/Customizing-the-notebook-settings/</link>
+          <pubDate>Tue, 04 Aug 2015 07:56:39 UTC</pubDate>
+          <author></author>
+          <guid>http://abirger.github.io/conda-recipes/Customizing-the-notebook-settings/</guid>
+          <description>&lt;p&gt;When deploying the notebook, you may want to customize and configure its behavior. You can easily customize it by including a configuration file and making a profile.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;If the IOOS environment is selected in the launcher, all applications you launch from there will have the IOOS environment.   On a linux or mac terminal window, you can activate the &lt;code&gt;ioos&lt;/code&gt; environment by typing &lt;code&gt;source activate ioos&lt;/code&gt; and deactivate it by typing &lt;code&gt;source deactivate&lt;/code&gt;. On windows, you can open an Anaconda command prompt (in the Anaconda programs folder) and type &lt;code&gt;activate ioos&lt;/code&gt; to activate the ioos environment, or type &lt;code&gt;deactivate&lt;/code&gt; to deactivate.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;If you want to always have the notebook server start in the same location, you can edit the notebook startup configuration. Type &lt;code&gt;ipython locate profile default&lt;/code&gt; to find out the directory where the configuration file is in.  Go to this directory and edit the file &lt;code&gt;ipython_notebook_config.py&lt;/code&gt;, setting the value of &lt;code&gt;c.NotebookApp.notebook_dir&lt;/code&gt;.  (Don&amp;rsquo;t forget to uncomment the lines by removing the leading hashtag character). Note: If the file doesn&amp;rsquo;t exist, type &lt;code&gt;ipython profile create&lt;/code&gt; (or maybe &lt;code&gt;ipython profile create default&lt;/code&gt;) to create a default configuration file.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;On windows the line will look like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;c.NotebookApp.notebook_dir = u&#39;C:\\users\\rsignell\\documents\\github\\notebook&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;On Mac and Linux, the line will look like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;c.NotebookApp.notebook_dir = &#39;/home/rsignell/my_notebooks&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;If you want to track your notebooks on github, you might want to set up the notebook server to create regular &lt;code&gt;.py&lt;/code&gt; python versions of your notebooks (in addition to the &lt;code&gt;.ipynb&lt;/code&gt; format that gets saved by default).  The instructions for this are here: &lt;a href=&#34;http://stackoverflow.com/a/25765194/2005869&#34;&gt;http://stackoverflow.com/a/25765194/2005869&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Another option that allows to create your customized environment is to create your own profile rather than changing the default profile. This can allow users to have multiple environments on a single machine. The steps to edit the configuration file remain similar to ones explained above for the default profile. To create your own profile type&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;ipython create profile &amp;quot;profilename&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&amp;ldquo;Profilename&amp;rdquo; can be selected by the user.&lt;/p&gt;
+
+&lt;p&gt;To find out the directory where the configuration file is in, type&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ipython locate profile &amp;quot;profilename&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Edit the changes in the configuration file as mentioned in the bullet points above. In order for the profile changes to get activated, type in&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ipython notebook --profile=taran
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Detailed instructions for making customized profile to have custom environment are described here: &lt;a href=&#34;https://ipython.org/ipython-doc/dev/config/intro.html&#34;&gt;https://ipython.org/ipython-doc/dev/config/intro.html&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Using Obvious CI to Build IOOS Binaries</title>
+          <link>http://abirger.github.io/conda-recipes/Using-Obvious-CI-to-build-IOOS-binaries/</link>
+          <pubDate>Tue, 04 Aug 2015 07:56:39 UTC</pubDate>
+          <author></author>
+          <guid>http://abirger.github.io/conda-recipes/Using-Obvious-CI-to-build-IOOS-binaries/</guid>
+          <description>
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/pelson/Obvious-CI&#34;&gt;Obvious-CI&lt;/a&gt; is a collection of tools that help with continuous integration like &lt;a href=&#34;https://travis-ci.org/ioos/conda-recipes/builds&#34;&gt;travis-ci&lt;/a&gt; and &lt;a href=&#34;https://ci.appveyor.com/project/comtbot/conda-recipes/history&#34;&gt;AppVeyor&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Using Obvious-CI, the single script &lt;code&gt;obvci_conda_build_dir.py&lt;/code&gt; can build all binaries in the repository, ordered by their dependency.  Note that &lt;code&gt;obvci_conda_build_dir.py&lt;/code&gt; reads the packages that are already on the channels and does not build if they are the same.&lt;/p&gt;
+
+&lt;h1 id=&#34;instructions:91505557b1edc877f932e36adce36dc6&#34;&gt;Instructions&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Type &lt;code&gt;conda info&lt;/code&gt; to see what channels you have.  Remove any channels from your conda config that are not from continuum.  For example, if you see a channel called &lt;code&gt;rsignell&lt;/code&gt;, remove it like this:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;conda config --remove channels rsignell -f
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Add the channel you are trying to install packages to.  This was the build process will have access to the requirements as they are built.  If building packages to upload to &lt;code&gt;ioos&lt;/code&gt;, then do:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;conda config --add channels ioos -f
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Remove everything from the cache, in order to force the build process to download packages from the locations specified in the conda-recipes:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;conda clean --tarballs --index-cache --packages --source-cache -y
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Remove the source code from the build directory.  This will be system dependent, but for example:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;rm /home/testbed/anaconda/conda-bld/linux-64/*
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Install obvious-ci&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;conda install -c ioos obvious-ci
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Download the conda-recipes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git clone https://github.com/ioos/conda-recipes.git
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;If you are an IOOS anaconda admin, or you are building for your own personal repository, you may want to upload the packages as you build.  The &lt;code&gt;obvci_conda_build_dir.py&lt;/code&gt; script will do that for you if you set a &lt;code&gt;BINSTAR_TOKEN&lt;/code&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;TOKEN=$(binstar auth -n NAME-OF-YOUR-TOKEN --max-age 22896000 -c --scopes api)
+export BINSTAR_TOKEN=$TOKEN
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Build all the packages in conda-recipes (and upload to &lt;code&gt;ioos&lt;/code&gt; channel if &lt;code&gt;BINSTAR_TOKEN&lt;/code&gt; is set):&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;obvci_conda_build_dir.py ./conda-recipes ioos --channel main
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+        </item>
+      
+    
+
+  </channel>
+</rss>
