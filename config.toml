@@ -1,0 +1,16 @@
+baseurl = "http://abirger.github.io/conda-recipes"
+CanonifyUrls = true
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+languageCode = "en-us"
+[params]
+  Title = "IOOS Conda Recipes"
+  Tagline = "Instructions on the IOOS Python Virtual Environment"
+[params.Github]
+  Head = "master"
+  Url = "https://github.com/abirger/conda-recipes"
+
+
+	
+ 
