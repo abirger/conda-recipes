@@ -52,7 +52,7 @@
     
     
       
-        <a class="sidebar-nav-item-list " href="http://abirger.github.io/conda-recipes/about/">About IOOS Conda Packages &amp; Python Environment</a>
+        <a class="sidebar-nav-item-list " href="http://abirger.github.io/conda-recipes/index.html">About IOOS Conda Packages &amp; Python Environment</a>
       
     
       
@@ -111,67 +111,61 @@
 	<div class="posts">
       <div class="post">
 
-
  	    
-           <h2><a href='http://abirger.github.io/conda-recipes/about/'>About IOOS Conda Packages &amp; Python Environment</a> </h2>
-        	
-				<!-- For a single homepage put in FrontMatter url = "index.html"; for a summary of multiple documents on one page do not put url parameter there at all -->
+           <h1>About IOOS Conda Packages &amp; Python Environment</h1>
+        	 
+				
+
+<!-- For a single homepage put in FrontMatter url = "index.html"; for a summary of multiple documents on one page do not put url parameter there at all -->
 
 <!-- PUT SUMMARY CONTENT HERE BEFORE "MORE" COMMENT-->
 
 <p>This site contains the instructions on how to setup and run the IOOS Python Virtual Environment in order to use the conda packages that are useful to the IOOS community. These conda packages were created with the <a href="https://github.com/ioos/conda-recipes/">conda recipes</a>, and shared with the community at <a href="https://anaconda.org/ioos">Anaconda.org</a>.</p>
- 
-				<footer>
-					<a href='http://abirger.github.io/conda-recipes/about/'><nobr><i>Read more ></i></nobr></a>
-				</footer>
+
+<!-- ADDITIONAL CONTENT MAY BE PLACED AFTER "MORE" FOR A SINGLE PAGE -->
+
+<p><a href="https://travis-ci.org/ioos/conda-recipes"><img src="https://travis-ci.org/ioos/conda-recipes.svg" alt="build status" />
+</a>&nbsp;<a href="https://ci.appveyor.com/project/comtbot/conda-recipes"><img src="https://ci.appveyor.com/api/projects/status/behpiwxfraxcruv3?svg=true" alt="Build status" />
+</a>&nbsp;<a href="https://circleci.com/gh/ioos/conda-recipes/tree/master"><img src="https://circleci.com/gh/ioos/conda-recipes/tree/master.svg?style=svg" alt="Circle CI" />
+</a>&nbsp;<a href="http://mybinder.org/repo/ioos/conda-recipes"><img src="http://mybinder.org/badge.svg" alt="Binder" />
+</a></p>
+
+<h2 id="the-ioos-python-environment:6083a88ee3411b0d17ce02d738f69d47">The IOOS Python Environment</h2>
+
+<p>For IOOS python users, we recommend the <a href="https://store.continuum.io/cshop/anaconda/">Anaconda Scientific Python Distribution</a> as the easiest way to get all the custom packages needed to run the IOOS system tests.  <a href="https://github.com/ioos/conda-recipes/wiki/Why-we-use-and-recommend-Anaconda">more info</a></p>
+
+<h3 id="why-we-use-and-recommend-anaconda:6083a88ee3411b0d17ce02d738f69d47">Why we use and recommend Anaconda</h3>
+
+<p>Anaconda users can just <code>conda install</code>, which installs not only binary packages for their platform, but the binary libraries they depend on.  So it&rsquo;s easier than <code>pip install</code> and, thanks to binary relocation, more powerful than python wheels.  System-level installation of libraries and admin
+privileges are not required.  Check out <a href="http://technicaldiscovery.blogspot.com/2013/12/why-i-promote-conda.html">Travis Oliphant&rsquo;s blog piece</a> for more info.</p>
+
+<h3 id="install-configure:6083a88ee3411b0d17ce02d738f69d47">Install &amp; Configure</h3>
+
+<ul>
+<li><a href="https://github.com/ioos/conda-recipes/wiki/Setting-up-the-IOOS-Python-environment">Setting up the IOOS Python environment</a></li>
+</ul>
+
+<h3 id="test:6083a88ee3411b0d17ce02d738f69d47">Test</h3>
+
+<ul>
+<li><a href="https://github.com/ioos/conda-recipes/wiki/Testing-the-IOOS-environment">Testing the IOOS environment</a></li>
+</ul>
+
+<h3 id="customize:6083a88ee3411b0d17ce02d738f69d47">Customize</h3>
+
+<ul>
+<li><a href="https://github.com/ioos/conda-recipes/wiki/Customizing-the-notebook-settings">Customizing the notebook settings</a></li>
+</ul>
+
+<h3 id="get-help:6083a88ee3411b0d17ce02d738f69d47">Get Help</h3>
+
+<p>Some bugs, like hard-coded paths, might surface when using these packages. If you encounter this or other problems, <a href="https://github.com/ioos/conda-recipes/issues">raise an issue</a>.</p>
+
+<p><strong>Acknowledgement</strong>: The recipes here are automatically built using <a href="https://travis-ci.org/ioos/conda-recipes">Travis-CI</a> with the assistance of <a href="https://github.com/pelson/Obvious-CI/https://github.com/ioos/conda-recipes/blob/master/.travis.yml#L14-L31">Obvious-CI</a>.</p>
+
 			
 		
-           <h2><a href='http://abirger.github.io/conda-recipes/Setting-up-the-IOOS-Python-environment/'>Installing the IOOS Anaconda Environment</a> </h2>
-        	
-				<p>One approach for running Anaconda is to go to <a href="https://store.continuum.io/cshop/anaconda/">https://store.continuum.io/cshop/anaconda/</a> and download the Anaconda installer, which installs a large number of packages into the root environment.
-We prefer to download just a minimal Anaconda (Miniconda) and create our own environment using just the packages we need.</p>
- 
-				<footer>
-					<a href='http://abirger.github.io/conda-recipes/Setting-up-the-IOOS-Python-environment/'><nobr><i>Read more ></i></nobr></a>
-				</footer>
-			
-		
-           <h2><a href='http://abirger.github.io/conda-recipes/Updating-an-IOOS-anaconda-package/'>Updating an IOOS Anaconda Package</a> </h2>
-        	
-				<p>If you have a package that you would like to update, a package that already exists on the IOOS anaconda channel (<a href="http://conda.anaconda.org/ioos">http://conda.anaconda.org/ioos</a>), you can try going to the <code>meta.yaml</code> file for that package, clicking on <code>edit</code> and changing the version number.</p>
- 
-				<footer>
-					<a href='http://abirger.github.io/conda-recipes/Updating-an-IOOS-anaconda-package/'><nobr><i>Read more ></i></nobr></a>
-				</footer>
-			
-		
-           <h2><a href='http://abirger.github.io/conda-recipes/Testing-the-IOOS-environment/'>Testing the IOOS Environment</a> </h2>
-        	
-				<p>You may run your iPython notebook without testing; however, a simple procedure allows verifying that the environment and notebook were set up properly.</p>
- 
-				<footer>
-					<a href='http://abirger.github.io/conda-recipes/Testing-the-IOOS-environment/'><nobr><i>Read more ></i></nobr></a>
-				</footer>
-			
-		
-           <h2><a href='http://abirger.github.io/conda-recipes/Customizing-the-notebook-settings/'>Customizing the Notebook Settings</a> </h2>
-        	
-				<p>When deploying the notebook, you may want to customize and configure its behavior. You can easily customize it by including a configuration file and making a profile.</p>
- 
-				<footer>
-					<a href='http://abirger.github.io/conda-recipes/Customizing-the-notebook-settings/'><nobr><i>Read more ></i></nobr></a>
-				</footer>
-			
-		
-           <h2><a href='http://abirger.github.io/conda-recipes/Using-Obvious-CI-to-build-IOOS-binaries/'>Using Obvious CI to Build IOOS Binaries</a> </h2>
-        	
-				<p><a href="https://github.com/pelson/Obvious-CI">Obvious-CI</a> is a collection of tools that help with continuous integration like <a href="https://travis-ci.org/ioos/conda-recipes/builds">travis-ci</a> and <a href="https://ci.appveyor.com/project/comtbot/conda-recipes/history">AppVeyor</a>.</p>
- 
-				<footer>
-					<a href='http://abirger.github.io/conda-recipes/Using-Obvious-CI-to-build-IOOS-binaries/'><nobr><i>Read more ></i></nobr></a>
-				</footer>
-			
-		
+
 
 
 		

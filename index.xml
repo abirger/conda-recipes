@@ -12,10 +12,10 @@
       
         <item>
           <title>About IOOS Conda Packages &amp; Python Environment</title>
-          <link>http://abirger.github.io/conda-recipes/about/</link>
+          <link>http://abirger.github.io/conda-recipes/index.html</link>
           <pubDate>Tue, 04 Aug 2015 07:56:39 UTC</pubDate>
           <author></author>
-          <guid>http://abirger.github.io/conda-recipes/about/</guid>
+          <guid>http://abirger.github.io/conda-recipes/index.html</guid>
           <description>
 
 &lt;!-- For a single homepage put in FrontMatter url = &#34;index.html&#34;; for a summary of multiple documents on one page do not put url parameter there at all --&gt;
@@ -26,40 +26,40 @@
 
 &lt;!-- ADDITIONAL CONTENT MAY BE PLACED AFTER &#34;MORE&#34; FOR A SINGLE PAGE --&gt;
 
-&lt;p&gt;&lt;br&gt;&lt;span&gt; &lt;a href=&#34;https://travis-ci.org/ioos/conda-recipes&#34;&gt;&lt;img src=&#34;https://travis-ci.org/ioos/conda-recipes.svg&#34; alt=&#34;build status&#34; /&gt;
-&lt;/a&gt; &lt;a href=&#34;https://ci.appveyor.com/project/comtbot/conda-recipes&#34;&gt;&lt;img src=&#34;https://ci.appveyor.com/api/projects/status/behpiwxfraxcruv3?svg=true&#34; alt=&#34;Build status&#34; /&gt;
-&lt;/a&gt; &lt;a href=&#34;https://circleci.com/gh/ioos/conda-recipes/tree/master&#34;&gt;&lt;img src=&#34;https://circleci.com/gh/ioos/conda-recipes/tree/master.svg?style=svg&#34; alt=&#34;Circle CI&#34; /&gt;
-&lt;/a&gt; &lt;a href=&#34;http://mybinder.org/repo/ioos/conda-recipes&#34;&gt;&lt;img src=&#34;http://mybinder.org/badge.svg&#34; alt=&#34;Binder&#34; /&gt;
-&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://travis-ci.org/ioos/conda-recipes&#34;&gt;&lt;img src=&#34;https://travis-ci.org/ioos/conda-recipes.svg&#34; alt=&#34;build status&#34; /&gt;
+&lt;/a&gt;&amp;nbsp;&lt;a href=&#34;https://ci.appveyor.com/project/comtbot/conda-recipes&#34;&gt;&lt;img src=&#34;https://ci.appveyor.com/api/projects/status/behpiwxfraxcruv3?svg=true&#34; alt=&#34;Build status&#34; /&gt;
+&lt;/a&gt;&amp;nbsp;&lt;a href=&#34;https://circleci.com/gh/ioos/conda-recipes/tree/master&#34;&gt;&lt;img src=&#34;https://circleci.com/gh/ioos/conda-recipes/tree/master.svg?style=svg&#34; alt=&#34;Circle CI&#34; /&gt;
+&lt;/a&gt;&amp;nbsp;&lt;a href=&#34;http://mybinder.org/repo/ioos/conda-recipes&#34;&gt;&lt;img src=&#34;http://mybinder.org/badge.svg&#34; alt=&#34;Binder&#34; /&gt;
+&lt;/a&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;the-ioos-python-environment:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;The IOOS Python Environment&lt;/h1&gt;
+&lt;h2 id=&#34;the-ioos-python-environment:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;The IOOS Python Environment&lt;/h2&gt;
 
 &lt;p&gt;For IOOS python users, we recommend the &lt;a href=&#34;https://store.continuum.io/cshop/anaconda/&#34;&gt;Anaconda Scientific Python Distribution&lt;/a&gt; as the easiest way to get all the custom packages needed to run the IOOS system tests.  &lt;a href=&#34;https://github.com/ioos/conda-recipes/wiki/Why-we-use-and-recommend-Anaconda&#34;&gt;more info&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;why-we-use-and-recommend-anaconda:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Why we use and recommend Anaconda&lt;/h2&gt;
+&lt;h3 id=&#34;why-we-use-and-recommend-anaconda:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Why we use and recommend Anaconda&lt;/h3&gt;
 
 &lt;p&gt;Anaconda users can just &lt;code&gt;conda install&lt;/code&gt;, which installs not only binary packages for their platform, but the binary libraries they depend on.  So it&amp;rsquo;s easier than &lt;code&gt;pip install&lt;/code&gt; and, thanks to binary relocation, more powerful than python wheels.  System-level installation of libraries and admin
 privileges are not required.  Check out &lt;a href=&#34;http://technicaldiscovery.blogspot.com/2013/12/why-i-promote-conda.html&#34;&gt;Travis Oliphant&amp;rsquo;s blog piece&lt;/a&gt; for more info.&lt;/p&gt;
 
-&lt;h2 id=&#34;install-configure:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Install &amp;amp; Configure&lt;/h2&gt;
+&lt;h3 id=&#34;install-configure:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Install &amp;amp; Configure&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/ioos/conda-recipes/wiki/Setting-up-the-IOOS-Python-environment&#34;&gt;Setting up the IOOS Python environment&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;test:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Test&lt;/h2&gt;
+&lt;h3 id=&#34;test:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Test&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/ioos/conda-recipes/wiki/Testing-the-IOOS-environment&#34;&gt;Testing the IOOS environment&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;customize:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Customize&lt;/h2&gt;
+&lt;h3 id=&#34;customize:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Customize&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/ioos/conda-recipes/wiki/Customizing-the-notebook-settings&#34;&gt;Customizing the notebook settings&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;get-help:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Get Help&lt;/h2&gt;
+&lt;h3 id=&#34;get-help:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Get Help&lt;/h3&gt;
 
 &lt;p&gt;Some bugs, like hard-coded paths, might surface when using these packages. If you encounter this or other problems, &lt;a href=&#34;https://github.com/ioos/conda-recipes/issues&#34;&gt;raise an issue&lt;/a&gt;.&lt;/p&gt;
 
