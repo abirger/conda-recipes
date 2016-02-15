@@ -5,6 +5,7 @@ draft = false
 sidebar = true
 Title = "About IOOS Conda Packages & Python Environment"
 date = 2015-08-04T07:56:39Z
+Url = "index.html"
 +++
 
 <!-- For a single homepage put in FrontMatter url = "index.html"; for a summary of multiple documents on one page do not put url parameter there at all -->
@@ -17,26 +18,26 @@ This site contains the instructions on how to setup and run the IOOS Python Virt
 
 
 
-<br><span> [![build status](https://travis-ci.org/ioos/conda-recipes.svg)](https://travis-ci.org/ioos/conda-recipes) [![Build status](https://ci.appveyor.com/api/projects/status/behpiwxfraxcruv3?svg=true)](https://ci.appveyor.com/project/comtbot/conda-recipes) [![Circle CI](https://circleci.com/gh/ioos/conda-recipes/tree/master.svg?style=svg)](https://circleci.com/gh/ioos/conda-recipes/tree/master) [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/repo/ioos/conda-recipes)</span>
+[![build status](https://travis-ci.org/ioos/conda-recipes.svg)](https://travis-ci.org/ioos/conda-recipes)&nbsp;[![Build status](https://ci.appveyor.com/api/projects/status/behpiwxfraxcruv3?svg=true)](https://ci.appveyor.com/project/comtbot/conda-recipes)&nbsp;[![Circle CI](https://circleci.com/gh/ioos/conda-recipes/tree/master.svg?style=svg)](https://circleci.com/gh/ioos/conda-recipes/tree/master)&nbsp;[![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/repo/ioos/conda-recipes)
 
-# The IOOS Python Environment
+## The IOOS Python Environment
 For IOOS python users, we recommend the [Anaconda Scientific Python Distribution](https://store.continuum.io/cshop/anaconda/) as the easiest way to get all the custom packages needed to run the IOOS system tests.  [more info](https://github.com/ioos/conda-recipes/wiki/Why-we-use-and-recommend-Anaconda)
 
-## Why we use and recommend Anaconda
+### Why we use and recommend Anaconda
 
 Anaconda users can just `conda install`, which installs not only binary packages for their platform, but the binary libraries they depend on.  So it's easier than `pip install` and, thanks to binary relocation, more powerful than python wheels.  System-level installation of libraries and admin
 privileges are not required.  Check out [Travis Oliphant's blog piece](http://technicaldiscovery.blogspot.com/2013/12/why-i-promote-conda.html) for more info.
 
-## Install & Configure
+### Install & Configure
 * [Setting up the IOOS Python environment](https://github.com/ioos/conda-recipes/wiki/Setting-up-the-IOOS-Python-environment)
 
-## Test
+### Test
 * [Testing the IOOS environment](https://github.com/ioos/conda-recipes/wiki/Testing-the-IOOS-environment)
 
-## Customize 
+### Customize 
 * [Customizing the notebook settings](https://github.com/ioos/conda-recipes/wiki/Customizing-the-notebook-settings)
 
-## Get Help
+### Get Help
 
 Some bugs, like hard-coded paths, might surface when using these packages. If you encounter this or other problems, [raise an issue](https://github.com/ioos/conda-recipes/issues).
 

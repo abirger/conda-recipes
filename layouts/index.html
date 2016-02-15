@@ -3,10 +3,10 @@
   <div class="content container">
 	<div class="posts">
       <div class="post">
-<!--
+
  	    {{ range first 1 .Data.Pages }}
-           <h2><a href='{{ .Permalink }}'>{{ .Title }}</a> </h2>
-        	{{ if eq .RelPermalink "/animal-telemetry/index.html" }} 
+           <h1>{{ .Title }}</h1>
+        	{{ if eq .RelPermalink "/index.html" }} 
 				{{ .Content }}
 			{{else}}
 				{{ .Summary }} 
@@ -15,8 +15,8 @@
 				</footer>
 			{{end}}
 		{{ end }}
--->
 
+<!--
  	    {{ range .Data.Pages }}
            <h2><a href='{{ .Permalink }}'>{{ .Title }}</a> </h2>
         	{{ if eq .RelPermalink "/index.html" }} 
@@ -31,7 +31,7 @@
 				</footer>
 			{{end}}
 		{{ end }}
-
+-->
 <!--
  	    {{ range .Data.Pages }}
            <h2><a href='{{ .Permalink }}'>{{ .Title }}</a> </h2>
